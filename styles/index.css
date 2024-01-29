@@ -1,0 +1,97 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/styles/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: LibreBaskerville;
+    src: url(/styles/fonts/LibreBaskerville-Regular.ttf);
+}
+
+body {
+    font-family: Montserrat;
+}
+
+.sidenav {
+    height: 100vh;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.ocjname {
+    padding: 50px 50px 20px 50px;
+    text-decoration: none;
+    font-size: 40px;
+    font-family: LibreBaskerville;
+    color: #000F36;
+    display: block;
+}
+
+.ocjtitle {
+    padding: 20px 50px 20px 50px;
+    font-style: italic;
+    font-size: 20px;
+    font-family: LibreBaskerville;
+    color: #000F36;
+    display: block;
+}
+  
+.sidenav a {
+    padding: 20px;
+    padding-left: 50px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: LibreBaskerville;
+    color: #818181;
+    display: block;
+    transition: .25s ease;
+}
+  
+.sidenav a:hover {
+    color: #000F36;
+}
+  
+.main {
+    margin-left: 20%;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.gallery {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%; /* Or any specific width */
+}
+
+.gallery img {
+    padding: 40px;
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #000f36 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}

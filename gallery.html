@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./styles/gallery.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div class="gallery">
+            <div class="gallery-item"><img src="styles/images/sampleimage.jpg" alt="Trulli" onclick="enlargeImage(this)"></div>
+            <div class="gallery-item"><img src="styles/images/sampleimage.jpg" alt="Trulli" onclick="enlargeImage(this)"></div>
+            <div class="gallery-item"><img src="styles/images/sampleimage.jpg" alt="Trulli" onclick="enlargeImage(this)"></div>
+            <div class="gallery-item"><img src="styles/images/sampleimage.jpg" alt="Trulli" onclick="enlargeImage(this)"></div>
+            <!-- Add more images as needed -->
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="enlargedImage">
+            <div id="caption"></div>
+        </div>
+
+        <script src="scripts/gallery.js"></script>
+        
+    </body>
+</html>
